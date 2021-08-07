@@ -1,0 +1,11 @@
+diff --git a/bin/vmware-config-tools.pl b/bin/vmware-config-tools.pl
+index 9f64614..e14cb0d 100755
+--- a/bin/vmware-config-tools.pl
++++ b/bin/vmware-config-tools.pl
+@@ -4162,7 +4162,7 @@ sub setup32or64Symlinks {
+ # Install a pam.d vmtoolsd file on all but Solaris.
+ if (vmware_product() ne 'tools-for-solaris' && ($open_vm_compat == 0)) {
+- install_symlink($pamdfile, '/etc/pam.d/vmtoolsd');
++# install_symlink($pamdfile, '/etc/pam.d/vmtoolsd');
+ }
+ if (vmware_product() eq 'tools-for-linux') {
